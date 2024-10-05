@@ -1,0 +1,10 @@
+Types of Operators in C
+C language provides a wide range of operators that can be classified into 6 types based on their functionality:
+
+Arithmetic Operators
+Relational Operators
+Logical Operators
+Bitwise Operators
+Assignment Operators
+Other Operators
+

@@ -1,0 +1,102 @@
+* Repetition control instruction is used to repeat a set of statements 
+in a program. 
+* 
+It is implemented using 
+1) while loop 
+2) for loop 
+3) do - while loop 
+* 
+General form of while: 
+i = 1 ; /* initialization of loop counter */ 
+while ( i <= 10 ) /* testing of loop counter */ 
+{ 
+ statement1 ; 
+ statement2 ; 
+ i++ ; /* incrementation of loop counter */ 
+} 
+
+* 
+i++ increments vale by 1 
+i-- decrements value of i by 1 
+There are no **, // and %% operators 
+*
+The expressions i = i + 1, i++ and ++i are all same 
+*
+ j = ++i ; first increments i, then assigns the incremented value to j 
+*
+ j = i++ ; first assigns current value of i to j, then increments i 
+*
+ while ( ++i < 10 ) first increments i, then checks condition 
+*
+ while ( i++ < 10 ) first checks condition, then increments i 
+*
+ i = i + 5 is same as i += 5 
+*
+ Compound assignment operators : +=, -=, *=, /= and %= 
+*
+ Running sum and products are implemented using following : 
+s = 0 ; 
+p = 1 ; 
+while ( condition ) 
+{ 
+ /* calculate term */ 
+ s = s + term ; 
+ p = p * term ; 
+}
+*
+The for Loop 
+The for loop allows us to specify three things about the loop in a single 
+line: 
+(a)
+ Setting a loop counter to an initial value. 
+(b)
+ Testing the loop counter to determine whether its value has 
+reached the number of repetitions desired. 
+(c)
+ Increasing the value of loop counter each time the body of the loop 
+has been executed. 
+The general form of for loop is as follows: 
+for ( initialize counter ; test counter ; increment counter ) 
+{ 
+ do this ; 
+ and this ; 
+} 
+*
+It is important to note that the initialization, testing and incrementation 
+part of a for loop can be replaced by any valid expression. Thus, the 
+following for loops are perfectly ok.
+
+
+for ( i = 10 ; i ; i -- ) 
+ printf ( "%d ", i ) ; 
+
+for ( i < 4 ; j = 5 ; j = 0 ) 
+ printf ( "%d ", i ) ; 
+
+for ( i = 1; i <=10 ; printf ( "%d ", i++ ) ) ; 
+
+for ( scanf ( "%d", &i ) ; i <= 10 ; i++ ) 
+ printf ( "%d", i ) ;
+
+ *
+The do-while loop looks like this: 
+do 
+{ 
+ this ; 
+ and this ; 
+} while ( this condition is true ) ;
+*
+The break Statement 
+We often come across situations where we want to jump out of a loop 
+instantly, without waiting to get back to the condition. The keyword 
+break allows us to do this. When break is encountered inside a while, 
+for or do-while loop, control automatically passes to the first statement 
+after the loop. A break is usually associated with an if.
+*
+The continue Statement 
+In some programming situations, we want to take the control to the 
+beginning of the loop, bypassing the statements inside the loop, which 
+have not yet been executed. The keyword continue allows us to do this. 
+When continue is encountered inside a loop, control jumps to the 
+beginning of the loop for performing next iteration. 
+*

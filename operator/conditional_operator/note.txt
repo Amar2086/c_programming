@@ -1,0 +1,71 @@
+(1) 
+More complex decision making can be done using logical operators 
+(2)
+Logical operators are &&, || and ! 
+(3) 
+Logical operators are useful in 2 situations : 
+(a) Checking ranges
+ (b) Solving yes/no problem 
+
+(4)
+ One more form of decision control instruction is : 
+if ( condition1 ) 
+ statement1 ; 
+else if ( condition2 ) 
+ statement2 ; 
+else if ( condition3 ) 
+ statement3 ; 
+else Å else goes to work if all 3 ifs fail 
+ statement4 ; 
+
+
+(5) 
+The higher the position, the higher the priority
+
+Hierarchy : 
+! 
+* / % 
++ - 
+< > <= >= 
+&&
+ || 
+ = 
+(6)
+ Unary operator - needs only 1 operand. Ex. ! sizeof 
+(7)
+ Binary operator - needs 2 operands. Ex. + - * / % < > <= >= 
+== != && || 
+(8)
+ sizeof is an operator. It gives number of bytes occupied by an entity 
+(9)
+ Usage of sizeof operator : 
+a = sizeof ( int ) 
+b = sizeof ( num ) ; 
+(10) 
+! ( a <= b ) is same as ( a > b ). ! ( a >= b ) is same as ( a < b ) 
+(11)
+ a = !b does not change value of b 
+(12)
+ a = !a means, set a to 0 if it is 1 and set it to 1 if it is 0 
+(13)
+ lvalue required error means something is wrong on LHS of = 
+(14) 
+Conditional operators ? : are ternary operators. General form : 
+expression1 ? expression2 : expression3 
+(15) 
+? : can have only 1 statement each 
+(16) 
+? : can be nested 
+(17) 
+? : always go together. : is not optional 
+(18)
+ Always parenthesize assignment operation if used with ? : 
+
+
+
+
+
+
+ 
+
+

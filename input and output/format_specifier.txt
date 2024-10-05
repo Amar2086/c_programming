@@ -1,0 +1,36 @@
+%c  = For character type.
+%d  = For signed integer type.
+%e or %E  = For scientific notation of floats.
+%f  = For float type.
+%g or %G  = For float type with the current precision.
+%i = signed integer
+%ld or %li  = Long
+%lf  = Double
+%Lf  = Long double
+%lu  = Unsigned int or unsigned long
+%lli or %lld = Long long
+%llu =  Unsigned long long
+%o= Octal representation
+%p =Pointer
+%s = String
+%u = Unsigned int
+%x or %X = Hexadecimal representation
+%n = Prints nothing
+%% = Prints % character
+
+Unformatted Input/Output functions
+
+Unformatted I/O functions are used only for character data type or character array/string and cannot be used for any other datatype. These functions are used to read single input from the user at the console and it allows to display the value at the console.
+
+Why they are called unformatted I/O?  
+
+These functions are called unformatted I/O functions because we cannot use format specifiers in these functions and hence, cannot format these functions according to our needs.
+
+The following unformatted I/O functions will be discussed in this section-
+getch()
+getche()
+getchar()
+putchar()
+gets()
+puts()
+putch()
