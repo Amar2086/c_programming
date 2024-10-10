@@ -1,0 +1,21 @@
+What is *ptr?
+Pointer (ptr): A pointer stores the memory address of a variable, in this case, the memory address of the double variable var.
+
+ptr holds the address of var, not its value.
+Dereferencing (*ptr): The dereferencing operator * gives you access to the value stored at the memory address that ptr is pointing to.
+ So, *ptr means "the value at the memory address stored in ptr."
+
+Why *ptr is needed:
+If you simply use ptr (without *), it will print the memory address of var, because that's what ptr stores.
+If you use *ptr, it will print the value stored at that memory address (i.e., the value of var).
+
+What happens if you don't use *:
+Without the *, you are printing the address of var because ptr holds the address, not the actual value.
+With the *, you are printing the value stored at the address, which is the value of var.
+In short, *ptr gives you the value at the address, while ptr itself gives you the address.
+
+
+
+
+
+
