@@ -1,5 +1,5 @@
 // C program to demonstrate the void pointer working
-
+#include <stdio.h>
 #include <stdlib.h>
 
 int main()
