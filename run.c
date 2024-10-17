@@ -1,35 +1,37 @@
-#include<stdio.h>
+// C program to illustrate the array
+// traversal using pointers in 2D array
+#include <stdio.h>
 
+// Function to traverse 2D array
+// using pointers
+void traverseArr(int* arr, int N, int M)
+{
+
+    int i, j;
+
+    // Traverse rows of 2D matrix
+    for (i = 0; i < N; i++) {
+
+        // Traverse columns of 2D matrix
+        for (j = 0; j < M; j++) {
+
+            // Print the element
+            printf("%d ", *((arr + i * M) + j));
+        }
+        printf("\n");
+    }
+}
+
+// Driver Code
 int main()
 {
-   int arr4[2][3][4] = {
-    {
-       {1, 2, 3, 4},
-        {5, 6, 7, 8}, 
-        {9, 10, 11, 12} 
-    },
-    {
-       {13, 14, 15, 16}, 
-       {17, 18, 19, 20}, 
-       {21, 22, 23, 24} 
-    }
-};
 
-int (*ptr4)[3][4] = arr4;
-printf("%d\n", (*ptr4) [2]);  // Pointer to an array of 3x4 integers
-printf("%d\n", (**ptr4) [2]); 
-printf("%d\n", (*ptr4+1)[1][2]); 
-printf("%d\n", (*ptr4)[1][2]);  // Outputs: 11 (second row, third element in the first 3x4 block)
-printf("%d\n", (*ptr4+2)[0][2]); 
-printf("%d\n", (*(ptr4+1))[1][2]); 
-printf("%d\n",*(*(*(ptr4))));
-printf("%d\n",*(*(*(ptr4+1))));
-printf("%d\n",*(*(*(ptr4+1)+1)));
-printf("%d\n",*(*(*(ptr4+1)+2)));
-printf("%d\n",*(*(*(ptr4+1)+1)+1));
-ptr4++;  // Moves to the second 3x4 block
-printf("%d\n", (*ptr4)[0][0]);  // Outputs: 13 (first element of the second block)
-printf("%d",*(*(*(ptr4))));
+    int N = 3, M = 2;
 
- return 0;
+    // A 2D array
+    int arr[][2] = { { 1, 2 }, { 3, 4 }, { 5, 6 } };
+
+    // Function Call
+    traverseArr(*arr, N, M);
+    return 0;
 }

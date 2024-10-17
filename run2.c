@@ -1,12 +1,29 @@
+// C program to illustrate the array
+// traversal using pointers
 #include <stdio.h>
 
-void modifyValue(int *numPtr) {
-    *numPtr = 20;  // Modifying the value at the memory address of the variable
-}
+// Driver Code
+int main()
+{
 
-int main() {
-    int x = 10;
-    modifyValue(&x);  // Pass the address of x to the function
-    printf("x after modifyValue: %d\n", x);  // Output: 20 (modified)
-    return 0;
+    int N = 5;
+
+    // An array
+    int arr[] = { 1, 2, 3, 4, 5 };
+
+    // Declare pointer variable
+    int* ptr;
+
+    // Point the pointer to first
+    // element in array arr[]
+    ptr = arr;
+
+    // Traverse array using ptr
+    for (int i = 0; i < N; i++) {
+
+        // Print element at which
+        // ptr points
+        printf("%d ", *ptr);
+        ptr++;
+    }
 }

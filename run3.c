@@ -1,35 +1,27 @@
-#include<conio.h>
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-     int x,y;
-     char a;
+int main() {
 
-     scanf("%d%d",&x,&y);
+    int N = 5;
 
-     getchar();
+    // An array
+    int arr[] = { 1, 2, 3, 4, 5 };
 
-     a=getchar();
-     
-    
-     switch (a)
-     {
-     case '+':
-        /* code */
-         
-        printf("%d",x+y);
-        break;
-    case '-':
-        printf("%d",x-y)  ;
-        break;
-    case '*' :
-        printf("%d",x*y);      
-     
-     default:
-      printf("Error Input");
-        break;
-     }
+    // Declare pointer variable
+    int* ptr;
 
- return 0;
+    // Point the pointer to the first element in array arr[]
+    ptr = &arr;
+
+    // Traverse array using ptr
+    for (int i = 0; i < N; i++) {
+
+        // Print element at which ptr points
+        printf("%d ", (*ptr));
+
+        // Move pointer to the next element
+       * ptr++;
+    }
+
+    return 0;
 }
