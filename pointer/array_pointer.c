@@ -9,7 +9,7 @@ int main()
      printf("\n%d",arr[0]);   //oupput :1
      printf("\n%d\n",ptr[3]);
      printf("%d",*(ptr+1));   //oupput :2   Pointer Arithmetic with Arrays
-     printf("\n%d\t%d",(*ptr2)[2],(*ptr2)[3]);
+     printf("\n%d\t%d\t%d",**(ptr2+3),(*ptr2)[2],(*ptr2)[3]);
      
     int a=10 ,b=20,c=30;
     int *arr2[]={&a,&b,&c};
