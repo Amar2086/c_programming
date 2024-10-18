@@ -1,27 +1,26 @@
+// C Program to calculate size of an array using loop
 #include <stdio.h>
-
-int main() {
-
-    int N = 5;
-
-    // An array
-    int arr[] = { 1, 2, 3, 4, 5 };
-
-    // Declare pointer variable
-    int* ptr;
-
-    // Point the pointer to the first element in array arr[]
-    ptr = &arr;
-
-    // Traverse array using ptr
-    for (int i = 0; i < N; i++) {
-
-        // Print element at which ptr points
-        printf("%d ", (*ptr));
-
-        // Move pointer to the next element
-       * ptr++;
+ 
+int arr_length(int arr[])
+{
+    int i;
+    int count = 0;
+    for(i=0; arr[i]!='\0'; i++)
+    {
+        count++;
     }
-
+    return count;
+}
+ 
+int main()
+{
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int n;
+ 
+    n = arr_length(arr);
+    printf("Length of Array is: %d", n);
+ 
     return 0;
 }
+
+// This code is contributed by Susobhan Akhuli
