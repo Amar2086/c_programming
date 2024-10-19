@@ -16,6 +16,8 @@ int main()
      //modify the value of the array
      strcpy(array_string[1],"ishtiak");
      printf("\n%s",array_string[1]);
+     strcat(array_string[0],array_string[1]);
+     printf("\n%s",array_string[0]);
      
 
  return 0;
