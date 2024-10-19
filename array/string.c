@@ -16,9 +16,11 @@ int main()
 
      printf("%d\n",length);
      strcat(str,str1);
-     printf("\n%s",str);
+     printf("\n%s\n",str);
      strcat(str1,str);  //When combining, look at the string size. If not enough, then it will not print
      puts(str1);
+     strcpy(str2,str1); //copy the string from str1 to str2.
+     printf("\n %s",str2);
 
  return 0;
 }
