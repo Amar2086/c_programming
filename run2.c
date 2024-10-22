@@ -1,20 +1,17 @@
-// A simple C program to show function pointers as parameter
-#include <stdio.h>
-
-// Two simple functions
-void fun1() { printf("Fun1\n"); }
-void fun2() { printf("Fun2\n"); }
-
-// A function that receives a simple function
-// as parameter and calls the function
-void wrapper(void (*fun)())
- {
-     fun(); 
- }
+#include<conio.h>
+#include<stdio.h>
 
 int main()
 {
-    wrapper(fun1);
-    wrapper(fun2);
-    return 0;
+    int sum=0;
+     for (int  i = 0; i < 20; i++)
+     {
+        /* code */
+        sum=sum+i;
+
+     }
+     printf("%d",sum);
+     
+
+ return 0;
 }
