@@ -7,7 +7,7 @@
 typedef struct students {
     char name[50];
     char branch[50];
-    int ID_no;
+    int ID_no; 
 } stu;
 
 // Driver code
