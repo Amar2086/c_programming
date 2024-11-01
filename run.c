@@ -1,19 +1,17 @@
 #include <stdio.h>
+#include <string.h>
 
-int stringlength(char *src) {
-    int i =0;
+void copy_string(char *dest, char *src) {
     while (*src != '\0') {
-        src++;
-        i++;
+        *dest++ = *src++;
     }
-     return i;// Null-terminate the destination string
+    *dest = '\0';
 }
 
 int main() {
-    char source[] = "Copy this!";
-    
-    int length=stringlength(source);
-    printf("The length of the  String: %d\n", length);
-
+    char src[] = "Hello, World!";
+    char dest[100];
+    copy_string(dest, src);  // This may cause issues.
+    printf("Copied String: %s\n", dest);
     return 0;
 }
