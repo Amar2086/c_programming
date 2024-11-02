@@ -15,6 +15,7 @@ int main()
      puts(tamim->name);
      printf("%d",tamim->roll);
      
-
+  tamim->roll=45;
+  printf("\n%d",tamim->roll);
  return 0;
 }
