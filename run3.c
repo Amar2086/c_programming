@@ -1,16 +1,14 @@
 #include <stdio.h>
 
-int main() {
-    int rows, i, j, space;
-    printf("Enter number of rows: ");
-    scanf("%d", &rows);
-    for (i = 1; i <= rows; ++i) {
-        for (space = 1; space <= rows - i; ++space)
-            printf(" ");
-        for (j = 1; j <= 2 * i - 1; ++j)
-            printf("*");
-        printf("\n");
-    }
+void counter() {
+     int count = 0;  // Static local variable
+    count++;
+    printf("Count: %d\n", count);
+}
 
+int main() {
+    counter(); // Output: Count: 1
+    counter(); // Output: Count: 2
+    counter(); // Output: Count: 3
     return 0;
 }

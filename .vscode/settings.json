@@ -1,3 +1,6 @@
 {
-    "docwriter.style": "NumPy"
+    "docwriter.style": "NumPy",
+    "files.associations": {
+        "COURSE.C": "cpp"
+    }
 }

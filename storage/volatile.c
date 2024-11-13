@@ -9,6 +9,7 @@ int main()
     {
       /* code */
       x=*ptr;
+      printf("%d",x);
       if(x)
       break;
     }
