@@ -1,6 +1,7 @@
 {
     "docwriter.style": "NumPy",
     "files.associations": {
-        "COURSE.C": "cpp"
+        "COURSE.C": "cpp",
+        "iostream": "cpp"
     }
 }

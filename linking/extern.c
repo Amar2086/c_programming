@@ -11,3 +11,6 @@ int main()
 
     return 0;
 }
+// gcc extern.c extern_shared_01.c -o extern_program
+//The command to run it
+//the extern_shared_01.c must be present in the same group
