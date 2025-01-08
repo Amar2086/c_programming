@@ -9,6 +9,8 @@ int main()
         printf("%d Fuck you\n",i);
 
         i++;
+        if(i==301)
+        break;
      }
 
  return 0;
